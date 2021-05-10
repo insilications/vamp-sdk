@@ -1,0 +1,17 @@
+rm *.gcno || :
+rm examples/*.gcno || :
+#cp --archive libvamp-hostsdk.* %{buildroot}/usr/lib64/
+#cp --archive libvamp-sdk.* %{buildroot}/usr/lib64/
+install -dm 0755 %{buildroot}/usr/lib64/vamp/
+#cp --archive examples/vamp-example-plugins.* %{buildroot}/usr/lib64/vamp/
+mv %{buildroot}/usr/lib/libvamp-hostsdk.so.3 %{buildroot}/usr/lib64/libvamp-hostsdk.so.3
+mv %{buildroot}/usr/lib/libvamp-hostsdk.so.3.10.0 %{buildroot}/usr/lib64/libvamp-hostsdk.so.3.10.0
+mv %{buildroot}/usr/lib/libvamp-sdk.so.2 %{buildroot}/usr/lib64/libvamp-sdk.so.2
+mv %{buildroot}/usr/lib/libvamp-sdk.so.2.10.0 %{buildroot}/usr/lib64/libvamp-sdk.so.2.10.0
+mv %{buildroot}/usr/lib/libvamp-hostsdk.so %{buildroot}/usr/lib64/libvamp-hostsdk.so
+mv %{buildroot}/usr/lib/libvamp-sdk.so %{buildroot}/usr/lib64/libvamp-sdk.so
+mv %{buildroot}/usr/lib/libvamp-hostsdk.a %{buildroot}/usr/lib64/libvamp-hostsdk.a
+mv %{buildroot}/usr/lib/libvamp-sdk.a %{buildroot}/usr/lib64/libvamp-sdk.a
+mv %{buildroot}/usr/lib/vamp/vamp-example-plugins.cat %{buildroot}/usr/lib64/vamp/vamp-example-plugins.cat
+mv %{buildroot}/usr/lib/vamp/vamp-example-plugins.n3 %{buildroot}/usr/lib64/vamp/vamp-example-plugins.n3
+mv %{buildroot}/usr/lib/vamp/vamp-example-plugins.so %{buildroot}/usr/lib64/vamp/vamp-example-plugins.so

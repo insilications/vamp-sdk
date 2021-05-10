@@ -1,0 +1,9 @@
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
+findutils
+ladspa_sdk
+ladspa_sdk-dev
+libsndfile
+libsndfile-dev
+libsndfile-staticdev
+ladspa_sdk-staticdev
