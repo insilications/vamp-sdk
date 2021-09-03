@@ -1,9 +1,19 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
+alsa-lib-dev
 findutils
+flac-dev
+flac-staticdev
 ladspa_sdk
 ladspa_sdk-dev
+ladspa_sdk-staticdev
+libogg-dev
+libogg-staticdev
 libsndfile
 libsndfile-dev
 libsndfile-staticdev
-ladspa_sdk-staticdev
+opus-dev
+opus-staticdev
+pkg-config
+sed
+util-linux

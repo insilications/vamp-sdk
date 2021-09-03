@@ -1,3 +1,3 @@
-make VERBOSE=1 V=1 %{?_smp_mflags} check || :
-make VERBOSE=1 V=1 %{?_smp_mflags} test || :
-make VERBOSE=1 V=1 %{?_smp_mflags} tests || :
+make -j1 VERBOSE=1 V=1 tests || :
+make -j1 VERBOSE=1 V=1 check || :
+make -j1 VERBOSE=1 V=1 test || :
